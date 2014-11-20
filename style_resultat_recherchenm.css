@@ -1,0 +1,175 @@
+header
+{
+	height: 100px;
+	position:fixed;
+	margin-top:-0.5%;
+ 	width: 100%
+
+
+}
+.bouton
+{
+	display:inline-block;
+	margin-right:10%;
+	color:white;
+	font-size:150%;
+
+}
+.logo
+{
+	margin-right:10%;
+	padding:0.5%;
+	opacity:none;
+	
+}
+body
+{
+	margin:-1%;
+	margin-left:0%;
+	margin-top:-1%;
+	font-family:"Freestyle Script";
+	font-size:110%;
+	background-color:rgb(192,192,192);
+
+
+
+
+}
+.banniere
+{
+	background-color:blue;
+	
+	
+}
+.fond
+{
+	width:100%;
+}
+a
+{
+	color:white;
+	opacity:none;
+	text-decoration:none;
+}
+nav
+{
+	margin-left:-2%;
+	 position: fixed;
+  	font-size:120%;
+  	top: 50%;
+  	width: 8em;
+  	margin-top: -10%;
+
+  	background-color:gray;
+  	padding:3%;
+  	opacity:0.9;
+  	border-radius: 10%;
+
+}
+.connecter
+{
+	margin-top:5%;
+	margin-left:30%;
+}
+
+
+}
+footer
+{
+	background-color: gray;
+	list-style:none;
+	opacity:0.8;
+
+}
+.bas
+{
+	list-style:none;
+	display: inline-block;
+	margin-left:20%;
+}
+section
+{
+	margin-left:18%;
+	margin-right:20%;
+
+
+	
+}
+.localisation
+{
+	display:inline-block;
+	margin-left:10%;
+}
+.caracteristiques
+{
+	display:inline-block;
+	margin-top:-10%;
+	margin-right:5%;
+	margin-left:7%;
+}
+article
+{
+	padding:5%;
+
+}
+.contraintes
+{
+	display:inline-block;
+	margin-right:11%;
+}
+.amenagement
+{
+	display:inline-block;
+}
+.disponibilites
+{
+	display:inline-block;
+	margin-left:20%;
+}
+.envoyer
+{
+	text-align:center;
+	color:black;
+}
+a
+{
+	text-decoration:none;
+	color:black;
+}
+aside
+{
+	float:right;
+	width:15%;
+	clear:both;
+	margin-left:1%;
+	margin-right:-1%;
+	background-color:rgb(128,192,192);
+	padding:2%;
+	opacity:0.9;
+	color:white;
+	font-size:150%;
+	text-align:center;
+	border:gray solid 5px;
+	border-radius:10%;
+	margin-bottom:2%;
+}
+.fond1
+{
+	width:100%;
+}
+.fond2
+{
+	width:185%;
+	margin-top:2%;
+	margin-left:-50%;
+}
+footer
+{
+	background-color: gray;
+	list-style:none;
+	opacity:0.8;
+	margin-left:-50%;
+	margin-right:-50%;
+	margin-top:-1%;
+
+}
