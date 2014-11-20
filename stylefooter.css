@@ -1,0 +1,27 @@
+#footer li {
+	list-style: none;
+	list-style-type: none;
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: justify;
+}
+#footer {
+	width: 100%;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	white-space: nowrap;
+	position: relative;
+	border:1px solid white;
+	background-color: white;
+	text-align: center;
+	font-size: 25px;
+}	
+#footer a {
+	text-decoration: underline;
+	color: gray;
+}
+#footer a:hover {
+	color: #1E824c;
+}
