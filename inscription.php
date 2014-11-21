@@ -1,52 +1,38 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" href="css/style_inscr.css" />
-		<title>Sweet Home Exchange : échangez vos propriétés en toute sûreté !</title>
-	</head>
-	<body>
-			<ul id="header">
-			<img src="images/logo_shev3d_mini.png" />
-		</ul>
-			<ul id="menu1">
-			<li class="bouton_1"><a href="index.php">Accueil</a></li>
-			<li class="bouton_1"><a href="offres.php">Voir les offres</a></li>
-			<li class= "bouton_1"><a href="acc_forum.php">Forum</a></li>
-			</ul>
+<?php include("inc/header.php");?>
 			
-		<div id="intro">
-			<?php echo "Bienvenue sur S.H.E !"; ?>
-		</p>
-		</div>
+<div id="blank">
+</div>
+		<div class="cadre_1">
 <h1 class="titre_fiche">Inscription<h1>
-<form method="post" action="inscr_verif.php">
+<form method="post" action="inscrp_verif.php">
 
 
-<fieldset>
-     <legend>Vos Coordonnées</legend> 
+<h2>Vos Coordonnées<h2> 
 <label>Nom:*</label>
 <input type="text" name="nom" id="nom" required/>
 <label>Prénom:*</label>
 <input type="text" name="prenom" id="prenom" required/>
-<label>Genre:*</label>
-<input type="radio" name="genre" value="homme" id="homme"/><label for="homme" class="inline">Homme</label>
-<input type="radio" name="genre" value="femme" id="femme"/><label for="femme" class="inline">Femme</label>
+<label>Mot de Passe:*</label>
+<input type="password" name="password" value="password" id="password" required/>
+<label> Confirmer Mot de Passe:*</label>
+<input type="password" name="password_2" value="password_2" id="password_2" required/>
+<label> Date de naissance:*</label>
+<input type="date" name="date_naissance" id="date_naissance" required/>
 <label> Adresse Email:*</label>
-<input type="text" name="mail" id="mail" required/>
+<input type="email" name="mail" id="mail" required/>
+<label> Confirmer Adresse Email:*</label>
+<input type="email" name="mail_2" id="mail_2" required/>
 <label> Telephone Portable:*</label>
-<input type="tel" name="tel1" id="tel1" maxlenght="10"/>       
+<input type="tel" name="tel1" id="tel1" maxlength="10" required />   
 <label> Téléphone Fixe:</label>
-    <input type="tel" name="tel2" id="tel2" maxlenght="10" required/>
-    <label>Photo d'identité:*</label>
-    <input type="file" name="photo_id" class="photo_id" value="Ajouter une photo" required/>
-</fieldset> 
-<fieldset>
-	<legend>Votre Adresse</legend>
+<input type="tel" name="tel2" id="tel2" maxlength="10" />
+<label>Photo d'identité:*</label>
+<input  class="photo_id" type="file" name="photo_id" id="photo_id" value="Ajouter une photo"required/> 
+<h2>Votre Adresse<h2>
 <label>Adresse1:*</label>
     <input type="text" name="adresse1" id="adresse1" required/>
 <label>Adresse2:</label>
-    <input type="text" name="adresse2" id="adresse2" required/>    
+    <input type="text" name="adresse2" id="adresse2"/>    
 <label> Code Postal:*</label>
 	<input type="text" name="code_postal" id="code_postal" maxlength="5" required/>
 <label> Ville:*</label>
@@ -60,31 +46,32 @@
    <option value="Italie">Italie</option>
    <option value="Espagne">Espagne</option>
 </optgroup>
-<optgroup label="Amerique">
+<optgroup label="Amerique du Nord">
    <option value="Etats_Unis">Etats-Unis</option>
    <option value="Canada">Canada</option>
 </optgroup>
 <optgroup label="Asie">   
    <option value="Chine">Chine</option>
    <option value="Japon">Japon</option>
-</optgroup>   
+   <option value="Corée_du_sud">Corée du Sud</option>
+</optgroup>
+<optgroup label="Afrique">
+   <option value="Maroc">Maroc</option>
+   <option value="Algérie">Algérie</option>
+   <option value="Afrique_du_Sud">Afrique du Sud</option>
+</optgroup>
+
 </select>  
-<label> Région/Etat </label>
+<label> Région/Etat: </label>
 <input type="text" name="region" id="region"/> 
-</fieldset>   
-  
-<input type="checkbox" name="conditions_utilisation" id="conditions_utilisation" required /> <label for="conditions_utilisation" class="inline2">Je certifie avoir lu et approuvé les conditions d'utilisation générale de ce site*</label><br/>
-<label class="chp">*Champs Obligatoires</label>
+</br>  
+<div>  
+<input type="checkbox" name="conditions_utilisation" id="cond" required /> 
+<label for="conditions_utilisation" class="inline2">Je certifie avoir lu et approuvé les conditions d'utilisation générale de ce site*</label>
+</div>
+<br/>
 <input type="submit" value="Valider"/>
+<label class="chp">*Champs Obligatoires</label>
 </form>
-<div id="footer">
-		<ul>
-			<li><a href="faq.php">F.A.Q</a></li>
-			<li><a href="contact.php">Contact</a></li>
-			<li><a href="cgu.php">Mentions légales</a></li>
-			<li classe="lien_4"><a href="a_propos.php">A propos</a></li>
-		</ul>
-		</div>
-	</body>
-</html>
-			
+</div>
+<?php include("inc/footer.php");?>

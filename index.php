@@ -1,21 +1,7 @@
 <?php include('inc/header.php'); ?>
 <?php session_start();?>
 
- <!--<div id="esp_profil">
-    <img  id="grp" class="photo_profil" src="images/image_profil.png" alt="photo_profil">
-    <ul id="grp" class="nav">
-      <li>
-        <a href="#">Paramètres</a>
-        <ul>
-          <li><a href="#">Modifier son profil</a></li>
-          <li><a href="#">Se déconnecter</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div> -->
-    <div id="msg_bvn">
- <!--   <?php echo 'Bonjour M. '.$SESSION['name'].' !' ?> -->
-  </div>
+ 
 		<div id="esp_membre">
   <label class="esp_membre">Espace membre</label>
   <img class="photo_de_profil" src="img/bonhomme-blanc.png" alt="bonhomme blanc"/>
