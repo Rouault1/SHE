@@ -1,5 +1,5 @@
-<?php include('inc/header.php'); ?>
-<?php include('inc/esp_membre.php'); ?>
+<?php include('inc/header_inv.php'); ?>
+
         <div> 
       		<div id="cadre_contact">
        			<article id="contact">

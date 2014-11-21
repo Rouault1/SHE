@@ -1,44 +1,19 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8"/>
-		<link rel="stylesheet" href="style-historique.css" />
-		<title>Derniers biens visités</title>
-	</head>
+<?php include('inc/header.php');?>
+<?php include('inc/esp_membre.php');?>	
+		
 
-	<body>
-	<div class="tout">
-
-		<?php include("menu.php") ; ?>
-	
-		<nav class="membre">
-			<ul class="menumembre">
-				<img class="photo_de_profil" src="image/bonhomme-blanc.png" alt="bonhomme blanc"/>
-				<h4>Espace membre</h4>
-				<h5>Bienvenue M.Dupont</h5>
-				<li><a href="#">Gérer ses échanges</a></li>
-				<li><a href="#">Déposer une annonce</a></li>
-				<li><a href="#">Gérer ses annonces</a></li>
-				<li><a href="#">Modifier son profil</a></li>
-				<li><a href="#">Derniers biens regardés</a></li>
-				<li><a href="#">Messagerie</a></li>
-				<li><a href="#">Se déconnecter</a></li>
-			</ul>
-		</nav>
-
-		<section>
-			<h2>Derniers biens visités :</h2>
+		<section id="historique">
+			<h2>Derniers biens visités</h2>
 				<div class="maison1">
-					<aside>
-						<img src="image/maison-eco.jpg"/>
-					</aside>
+					<a href="#"><img src="img/Maison8.jpg" width="210px" height="210px"/></a>
 				</div>	
+				<div id="bien1">
 				<div class="description1">
 					<article>
 						<h3>Régions, caractéristiques, avis, phrase d'accroche</h3> </br>
 						<ul class="notes-echelle">
 							<li>
-								<label for="note01" title="Note&nbsp;: 1 sur 5">1</label>
+								<label for="note01" title="Note&nbsp;: 1 sur 5"><img src="img/etoile.png"/></label>
 								<input type="radio" name="notesA" id="note01" value="1" />
 							</li>
 							<li>
@@ -58,14 +33,17 @@
 								<input type="radio" name="notesA" id="note05" value="5" />
 							</li>
 						</ul>
+					</br>
+						<a href="#"> Voir la fiche du bien</a>
 					</article>
-				</div> </br>
-
+				</div> 
+			</div>
+			</br>
+                <div id="bien2">
 					<div class="maison2">
-					<aside>
-						<img src="image/maison-eco.jpg"/>
-					</aside>
-				</div>	
+						<a href="#" ><img src="img/Maison7.jpg" width="210px" height="210px"/></a>
+					</div>	
+
 				<div class="description2">
 					<article>
 						<h3>Régions, caractéristiques, avis, phrase d'accroche</h3> </br>
@@ -91,19 +69,12 @@
 								<input type="radio" name="notesA" id="note05" value="5" />
 							</li>
 						</ul>
+					</br>
+						<a href="#"> Voir la fiche du bien</a>
 					</article>
+				</div>	
 				</div>
 		</section>
 					
-
-		<div id="footer">
-		<ul>
-			<li classe="lien_1" style="margin-left: 355px;"><a href="faq.php">F.A.Q</a></li>
-			<li><a href="contact.php">Contact</a></li>
-			<li><a href="cgu.php">Mentions légales</a></li>
-			<li classe="lien_4"><a href="a_propos.php">A propos</a></li>
-		</ul>
-		</div>
-	</div>
-	</body>
-</html>	
+<?php include('inc/slider.php');?>
+<?php include('inc/footer.php');?>

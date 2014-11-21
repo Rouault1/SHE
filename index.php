@@ -1,5 +1,5 @@
 <?php include('inc/header.php'); ?>
-
+<?php session_start();?>
 
  <!--<div id="esp_profil">
     <img  id="grp" class="photo_profil" src="images/image_profil.png" alt="photo_profil">
@@ -27,20 +27,39 @@
       <li><a href="#">Messagerie</a></li>
   </ul>
 </div>
-<div style="width:600px;height:300px;overflow-y:scroll; margin: 80px auto;">
-        <div class="am-container" id="am-container">
-        <a href="#"><img src="img/Maison1.jpg"></img></a>
-        <a href="#"><img src="img/Maisonblabla.jpg"></img></a>
-        <a href="#"><img src="img/Maison333.jpg"></img></a>
-        <a href="#"><img src="img/Maison4.jpg"></img></a>
-        <a href="#"><img src="img/Maison5.jpg"></img></a>
-        <a href="#"><img src="img/Maison6.jpg"></img></a>
-        <a href="#"><img src="img/Maison7.jpg"></img></a>
-        <a href="#"><img src="img/Maison8.jpg"></img></a>
-      
-        
-        </div>
-      </div>
+<div id="barre_recherche">
+<form method="post" action="recherche_result.php" >
+  <input type="text" name="recherche" id="recherche" placeholder="Rechercher une Annonce" required/>
+  <input type="submit" value="Rechercher" id="rechercher"/>
+</form>
+</div>
+</br>
+<div id="lien_recherche">
+  <a href="#">Recherche avancée</a>
+</div>
+<div id="mosaic">
+  <h2 id="titre_mos">Les Mieux Notés</h2>
+<table id="mos" border="0" callpadding="0" cellspacing="0">
+  <tr>
+    <td><a href="#"><img id="mos_img" src="img/Maison1.jpg" width="500px" height="300px"></a></td>
+    <td><a href="#"><img id="mos_img" src="img/Maisonblabla.jpg" width="500px" height="300px"></a></td>
+    <td><a href="#"><img id="mos_img" src="img/Maison333.jpg" width="500px" height="300px"></a></td>
+    <td><a href="#"><img id="mos_img" src="img/Maison8.jpg" width="500px" height="300px"></a></td>
+  </tr>
+  <tr>
+    <td><a href="#"><img id="mos_img" src="img/Maison4.jpg" width="500px" height="300px"></a></td>
+    <td><a href="#"><img id="mos_img" src="img/Maison5.jpg" width="500px" height="300px"></a></td>
+    <td><a href="#"><img id="mos_img" src="img/Maison6.jpg" width="500px" height="300px"></a></td>
+    <td><a href="#"><img id="mos_img" src="img/Maison333.jpg" width="500px" height="300px"></a></td>
+  </tr>
+  <tr>
+    <td><a href="#"><img id="mos_img" src="img/Maison6.jpg" width="500px" height="300px"></a></td>
+    <td><a href="#"><img id="mos_img" src="img/Maison8.jpg" width="500px" height="300px"></a></td>
+    <td><a href="#"><img id="mos_img" src="img/Maison8.jpg" width="500px" height="300px"></a></td>
+    <td><a href="#"><img id="mos_img" src="img/Maison5.jpg" width="500px" height="300px"></a></td>
+  </tr>
+</table>
+</div>  
 <div id="slideshow">
     <img class="active" src="http://www.hiphoprepublican.com/wp-content/uploads/2013/06/New-York-City-Sun.jpg" alt="Slideshow Image 1" />
     <img src="img/image1.jpg" alt="Slideshow Image 2" />
