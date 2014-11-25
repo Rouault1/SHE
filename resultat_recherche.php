@@ -3,18 +3,18 @@
 
 <div class="cadre_aside_result">
 	<aside class="aside_result">
-		<img class="fond"src="images/fond.jpg" />
+		<img class="fond" src="img/fond.jpg" height="219px"  />
 		<p>Villa</p>
 	</aside>
 	<br>
 	
 	<aside class="aside_result">
-		<img class="fond"src="images/famille.jpg" />
+		<img class="fond" src="img/famille.jpg" height="219px"  />
 		<p>Week-end en famille</p>
 	</aside>
 	<br>
 	<aside class="aside_result">
-		<img class="fond"src="images/paris.jpg" />
+		<img class="fond" src="img/paris.jpg" height="219px"  />
 		<p>Appartement parisien</p>
 	</aside>
 </div>
@@ -24,7 +24,7 @@
 
 			<article class="article_result" >
 				<p class="phraseaccroche">Phrase d'accroche</p><br/>
-			    <img src="images/villa1.jpg" alt="villa1"/>
+			    <img src="img/villa1.jpg" alt="villa1"/>
 			    <div class="logement">
 			    <ul>
 			    	<li>Localisation</li><br/>
@@ -35,7 +35,7 @@
 			    </div>
 			
 				<p class="phraseaccroche">Phrase d'accroche</p><br/>
-			    <img src="images/villa1.jpg" alt="villa1"/>
+			    <img src="img/villa1.jpg" alt="villa1"/>
 			    <div class="logement">
 			    <ul>
 			    	<li>Localisation</li><br/>
@@ -46,7 +46,7 @@
 			    </div>
 			
 				<p class="phraseaccroche">Phrase d'accroche</p><br/>
-			    <img src="images/villa1.jpg" alt="villa1"/>
+			    <img src="img/villa1.jpg" alt="villa1"/>
 			    <div class="logement">
 			    <ul>
 			    	<li>Localisation</li><br/>
