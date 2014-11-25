@@ -906,7 +906,7 @@ ul.notes-echelle li label {
  	font-style: bold;
  	font-size:20px;
 }
- 	
+
 
 /* Resultat Recherche*/
 .fond
@@ -988,6 +988,7 @@ ul.notes-echelle li label {
 {
 	border: solid 1px white;
 	background-color: white;
+	color:#c0c0c0;
 
 }
 .phraseaccroche img{
