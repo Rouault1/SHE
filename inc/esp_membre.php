@@ -4,7 +4,7 @@
 	<ul>
       <li><a href="gestion_echange.html">Gérer ses échanges</a></li>
       <li><a href="#">Déposer une annonce</a></li>
-      <li><a href="#">Gérer ses annonces</a></li>
+      <li><a href="#">Derniers biens visités</a></li>
       <li><a href="#">Derniers biens regardés</a></li>
       <li><a href="#">Messagerie</a></li>
   </ul>
