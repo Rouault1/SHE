@@ -645,14 +645,40 @@ ul.notes-echelle li {
 	min-height:20px;
 	white-space: nowrap;
 }	
+.notes-echelle img:hover{
+	background-image: url(img/etoiles.png);
+	z-index:2;
+}
+/* html ul.notes-echelle li {
+	width:20px;
+	height:20px;
+}
 ul.notes-echelle li label {
 	display:block;
 	text-align:center;
 	line-height:20px;
-	background-image:url(img/etoile.png) center top no-repeat;
+	background-image:url(img/etoiles.gif) center top no-repeat;
 	cursor:pointer;
 	white-space: nowrap;
+}*/
+ul.notes-echelle input {
+	position:absolute;
+	left:-999%;
 }
+.notes-echelle input:focus, .notes-echelle input:hover {
+	background-image: url(img/etoiles.png);
+	z-index:2;
+}	
+
+/*ul.notes-echelle li.note-off label {
+	background-position:center -60px;
+}
+ul.notes-echelle li.note-checked {
+	font-weight:bold;
+}
+ul.notes-echelle li.note-focus {
+	outline:1px dotted #000;
+}*/
 
 
 
