@@ -426,7 +426,7 @@ ul#menu1 a:hover {
  border:1px solid rgba(255,255,255,0.75);
  border-radius:5px;
  width:200px;
- /*box-shadow:1px 1px 2px white inset;*/
+
  }
 #cadre_1 select {
  margin-top:10px;
@@ -496,7 +496,7 @@ article legend{
 	margin-left: 195px;
 	margin-bottom: 50px;
 }
-#titre_contact
+.titre_contact
 {
 	color:#1E824c;
 	font-size: 30px;
@@ -510,8 +510,8 @@ article legend{
 	padding-top: 50px;
 	padding-bottom: 50px;
 	padding-left: 150px;
-	margin-left: 500px;
-	margin-top: 150px;
+	margin-left: 400px;
+	margin-top: 30px;
 	margin-right: 200px;
 	margin-bottom:200px;
 	border: 3px solid rgba(255,255,255,0.75);
@@ -519,21 +519,15 @@ article legend{
 	height: 800px;
 	width:900px;
 }
-#input_name
+.contact_input
 {
 	height:50px;
 	width:400px;
 	margin-left:150px;
 	background-color: #ECECEC;
 }
-#input_email
-{
-	height:50px;
-	width:400px;
-    margin-left:150px;
-    background-color: #ECECEC;
-}
-#input_message 
+
+.contact_message 
 {
 	margin-top: 10px;
 	height:50px;
@@ -541,7 +535,7 @@ article legend{
 	height:300px;
 	background-color: #ECECEC;
 }
-#sujet
+.contact_sujet
 {	
     background-color: #ECECEC;
 	width:400px;
