@@ -41,21 +41,13 @@ $(function() {
   
 			<div id="header">
 			<a  class="logo" href="index.php" /><img src="img/logo_shev3d_mini.png" /></a>
-            <script>
-            function logout() 
-            {
-                document.getElementById("deco").onclick
-                alert('Vous êtes sur le point de vous déconnecter.')
-            }
-            </script>
+
 			<ul id="menu1">
 			<li class="bouton_1"><a href="index.php">Accueil</a></li>
 			<li class="bouton_1"><a href="offres.php">Voir les offres</a></li>
 			<li class= "bouton_1"><a href="acc_forum.php">Forum</a></li>
-			<li class="bouton_1"><a href="#">Modifier son profil</a></li>
-			<li class="bouton_1"><a id="deco" href="index.php?membre=0" onclick="logout()">Se déconnecter</a></li>
-
-
+			<li class="bouton_1"><a href="#">Modifier son profil</a>
+			<li class="bouton_1"><a href="index_inv.php">Se déconnecter</a></li>
     </ul>
     <div style="clear:both;">
     </div>

@@ -66,7 +66,7 @@ if(!empty($_POST)) {
 
 					// Initialisation de l'objet PDO
 					try {
-						$db = new PDO("mysql:host=localhost;dbname=mydb", "root", "root");
+						$db = new PDO("mysql:host=localhost;dbname=mydb", "root", "");
 						// Permet d'afficher les erreurs envoyés par SQL
 						$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 					} catch (Exception $e) {

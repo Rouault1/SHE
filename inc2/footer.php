@@ -1,4 +1,5 @@
-  <div id="footer">
+
+   	<div id="footer">
     <ul>
       <li><a href="faq.php">F.A.Q</a></li>
       <li><a href="contact.php">Contact</a></li>

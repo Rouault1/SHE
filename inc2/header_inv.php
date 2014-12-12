@@ -42,7 +42,7 @@ $(function() {
 			<a  class="logo" href="index.php" /><img src="img/logo_shev3d_mini.png" /></a>
 
 			<ul id="menu1">
-			<li class="bouton_1"><a href="index_inv.php">Accueil</a></li>
+			<li class="bouton_1"><a href="index.php">Accueil</a></li>
 			<li class="bouton_1"><a href="offres.php">Voir les offres</a></li>
 			<li class= "bouton_1"><a href="acc_forum.php">Forum</a></li>
 			

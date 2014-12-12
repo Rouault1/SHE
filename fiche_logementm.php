@@ -1,4 +1,4 @@
-
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -105,7 +105,14 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 			
 			<h3>Commentaires des membres de S.H.E<h3>
 				<textarea name="remarque" id="remarque" rows="10" cols="50"><?= $home['remarque']; ?></textarea> <br/>
+			<?php
 
+			 $home['id_home'] = isset($_POST["id_home"]) ? $_POST["id_home"] : '';
+			 $req=$db->prepare('SELECT * FROM home, demande WHERE user_id_user=id_user AND home_id_home=id_home ');
+			 $req->execute($user);
+			 $homes = $req->fetchAll();
+			 
+			 ?>
 
 				<a href="demande.php?id=<?= $home['id_home']; ?>">Demander un échange <?= $home['id_home']; ?></a>
 	</section>
