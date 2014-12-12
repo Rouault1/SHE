@@ -1,5 +1,5 @@
-
-   <?php
+<?php
+   session_start();
   			
    function error ($nom) {
   global $errors;
@@ -46,17 +46,40 @@ if(empty($errors)){
           catch (PDOException $e) {
             die("Erreur:". $e->getMessage());
           }
-          $req=$db->prepare('SELECT id_user, email, password FROM user WHERE email = :email');
+          $req=$db->prepare('SELECT id_user, email, password FROM user WHERE email = :mail');
           try{
             $req->execute($form);
             $res=$req->fetch();
+
           }
           catch(Exception $e){
               die("Erreur:". $e->getMessage());
             }
           if(isset($res) && (!empty($res))){
-              $errors['global']=message('Vous allez recevoir un mail pour réinitialiser votre mot de passe.');
+              $errors['global']=message('Vous allez recevoir un email pour réinitialiser votre mot de passe.');
+             
+              $to=$_SESSION["email"];
+             
+              $sujet='Mot de passe oublié';
+              
+              $msg='Bonjour,'. "\r\n\r\n";
+              $msg.='Vous avez oublié votre mot de passe. Cliquez sur le lien ci-dessous pour réinitialiser votre mot de passe:' . "\r\n";
+              $msg.="<a href='modif_mdp.php'>". "\r\n";
+              $msg.="\r\n";
+              $msg.="\r\n";
+              $msg.='Merci de ne pas envoyer de mails à  cette adresse.'."\r\n";
+              $msg.="\r\n";
+              $msg.="L'équipe du site SHE";
+              
+              $header='From: contactshe@she.fr'."\r\n\r\n";
+              try{
+              mail($to,$sujet,$msg,$header);
 
+                 }
+              catch(Exception $e){
+                die("Erreur:" .$e->getMessage());
+
+              }
             }
             elseif(isset($res) && (empty($res))){
               $errors['login']=message('Ce compte n\'existe pas.', 'error');
@@ -68,12 +91,12 @@ if(empty($errors)){
       include('inc/slider.php');
 ?>
 <form method="post" action="">
-   <label>Votre Adresse Email Trop Fun:</label>
+   <label>Votre Adresse Email:</label>
     <input type="email" name="mail" id="mail" value="<?= (isset($_POST['mail']) ? $_POST['mail'] : ''); ?>">
     <?php error('mail'); ?> 
-    <?php echo isset($errors['login']) ? $errors['login']: '' ;
-          echo isset($errors['global']) ? $errors['global']: '' ;
+    <?php echo isset($errors['login']) ? $errors['login'] : '' ;
+          echo isset($errors['global']) ? $errors['global'] : '' ;
     ?>
-   <input type SUBMIT value="envoyer">
+   <input type="submit" value="envoyer">
 </form>
 <?php include('inc/footer.php');?>
