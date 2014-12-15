@@ -35,18 +35,18 @@ if(!empty($_POST)) {
 	}
 
 	// Vérification des champs du formulaire
-	verif("#^(homme|femme)$#", 'Genre', 'genre');
-	verif("#^[a-zàéèëïÖü -]+$#i", 'Nom', 'nom');
-	verif("#^[a-zàéèëïÖü -]+$#i", 'Prénom', 'prenom');
-	verif("#([0-9]{2}[-./ ][0-9]{2}[-./ ][0-9]{4}|[0-9]{4}[-./ ][0-9]{2}[-./ ][0-9]{2})#", 'Date de naissance', 'date_naissance');
-	verif("#^.+$#", 'Mot de passe', 'password');
+	verif("#^(homme|femme)$#", 'Gender', 'genre');
+	verif("#^[a-zàéèëïÖü -]+$#i", 'Name', 'nom');
+	verif("#^[a-zàéèëïÖü -]+$#i", 'Surname', 'prenom');
+	verif("#([0-9]{2}[-./ ][0-9]{2}[-./ ][0-9]{4}|[0-9]{4}[-./ ][0-9]{2}[-./ ][0-9]{2})#", 'Date of birth', 'date_naissance');
+	verif("#^.+$#", 'Password', 'password');
 	verif("#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", 'Email', 'mail');
-	verif("#^0[1-59]([-. ]?[0-9]{2}){4}$#", 'Numéro fixe', 'tel1');
-	verif("#^0[67]([-. ]?[0-9]{2}){4}$#", 'Numéro mobile','tel2');
-	verif("#^[1-9]([0-9]?){2,5}[a-zàéèëêÏÖôüûÿ ,.'-]+([a-zàéèêëïôöüûÿ ,.'-]?){2,}$#i", 'Adresse', 'adresse');
-	verif("#^[0-9]([0-9]){4}$#", 'code postal', 'code_postal');
-	verif("#^[a-zàéèëïÖü -]+$#i", 'Ville', 'ville');
-	verif("#^[a-zàéèëïÖü -]+$#i", 'Pays', 'pays');
+	verif("#^0[1-59]([-. ]?[0-9]{2}){4}$#", 'Phone number', 'tel1');
+	verif("#^0[67]([-. ]?[0-9]{2}){4}$#", 'Cellphone number','tel2');
+	verif("#^[1-9]([0-9]?){2,5}[a-zàéèëêÏÖôüûÿ ,.'-]+([a-zàéèêëïôöüûÿ ,.'-]?){2,}$#i", 'Adress', 'adresse');
+	verif("#^[0-9]([0-9]){4}$#", 'Zip code', 'code_postal');
+	verif("#^[a-zàéèëïÖü -]+$#i", 'City', 'ville');
+	verif("#^[a-zàéèëïÖü -]+$#i", 'Country', 'pays');
 	verif("#^[a-zàéèëïÖü -]+$#i", 'Region', 'region');
 
 	// Vérifie s'il n'y a pas d'erreurs
@@ -111,18 +111,18 @@ include('inc/slider.php');
 
 if(!$insc)
 {
-	include('inc/header_inv.php');
-	include('inc/form.php');
-	include("inc/footer.php");
+	include('inc/header_inv_eng.php');
+	include('inc/form_eng.php');
+	include("inc/footer_eng.php");
 }
 else{
-	include('inc/header_inv.php'); ?>	
+	include('inc/header_inv_eng.php'); ?>	
 	<h1 class="titre_verif">Thank you for your registration !</h1>
 	<div class="verif">
 		<h3 class="verif2">Your registration has been taken into account. You will receive a confirmation email.</h3>
 		<a class="lien_verif" href="index.php">Back to home</a>
 	</div>	
-	<?php include("inc/footer.php");
+	<?php include("inc/footer_eng.php");
 
 }
 ?>

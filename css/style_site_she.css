@@ -51,7 +51,6 @@ ul#menu1 a:hover {
 			background-color: rgb(255,255,255);
 			width: 100%;
 			padding: 0;
-			margin-bottom: 100px;
 			display: block;
 			z-index: 100;
 }	
@@ -208,8 +207,15 @@ ul#menu1 a:hover {
 	text-decoration: underline;
 	font-size: 35px;
 }
-
-
+.flags li {
+	list-style:none;
+	list-style-type:none;
+	display: inline-block;
+	float:right;
+}
+.flagb {
+	margin-top: 9px;
+}
 /* Page d'accueil non membre*/
 #barre_connect legend
 {
