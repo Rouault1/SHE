@@ -49,9 +49,9 @@ $(function() {
             }
             </script>
 			<ul id="menu1">
-			<li class="bouton_1"><a href="index.php">Home</a></li>
-			<li class="bouton_1"><a href="offres.php">Offers</a></li>
-			<li class= "bouton_1"><a href="acc_forum.php">Forum</a></li>
+			<li class="bouton_1"><a href="index_eng.php">Home</a></li>
+			<li class="bouton_1"><a href="recherchem_eng.php">Offers</a></li>
+			<li class= "bouton_1"><a href="#">Forum</a></li>
 			<li class="bouton_1"><a href="#">Edit your profile</a></li>
 			<li class="bouton_1"><a id="deco" href="index.php?membre=0" onclick="logout()">Logout</a></li>
 

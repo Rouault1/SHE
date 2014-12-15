@@ -39,12 +39,12 @@ $(function() {
 	<body>
   
 			<div id="header">
-			<a  class="logo" href="index.php" /><img src="img/logo_shev3d_mini.png" /></a>
+			<a  class="logo" href="index_eng.php" /><img src="img/logo_shev3d_mini.png" /></a>
 
 			<ul id="menu1">
-			<li class="bouton_1"><a href="index.php">Home</a></li>
-			<li class="bouton_1"><a href="offres.php">Offers</a></li>
-			<li class= "bouton_1"><a href="acc_forum.php">Forum</a></li>
+			<li class="bouton_1"><a href="index_eng.php">Home</a></li>
+			<li class="bouton_1"><a href="recherchem_eng.php">Offers</a></li>
+			<li class= "bouton_1"><a href="#">Forum</a></li>
 			
 			
     </ul>
