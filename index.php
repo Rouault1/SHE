@@ -30,7 +30,6 @@ function verif ($motif, $nom, $cle) {
 $form = array();
 // Contient les erreurs du formulaire
 $errors = array();
-
 if(!empty($_POST))
 {
   // Vérification des données entrées par l'utilisateur
@@ -88,7 +87,8 @@ if(!empty($_POST))
 if (!$_SESSION)
   {
   include ('inc/header_inv.php');
-  echo '<div id="barre_connect">';
+  ?><ul class='flags'><li><a href="index.php/fr"><img src="img/drapeaufrancais.png"/></a></li><li><a href="index.php/eng"><img  class="flagb" src="img/flag_en.png"/></a></li></ul>
+  <?php echo '<div id="barre_connect">';
   echo '<form method="post" action="index.php" >
   <legend>Connectez-vous</legend> 
   <input type="text" name="email" id="email" class="connect1" placeholder="Adresse mail" required/>
@@ -104,7 +104,8 @@ echo '</div>';
 else {
   include ('inc/header.php');
   include('inc/esp_membre.php');
-  echo '<div class="msg_bvn">Bienvenue '.$_SESSION['prenom'].' '.$_SESSION['nom'].'</div> ';
+  ?>
+  <?php echo '<div class="msg_bvn">Bienvenue, '.$_SESSION['prenom'].'</div> ';
   echo '<div class="barre_recherche">';
   echo '<form method="post" action="resultats_recherchem.php">
   <legend>Recherchez une annonce</legend>
