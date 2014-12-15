@@ -1098,11 +1098,11 @@ th {
 
 /* Contacts*/
 article legend{
-	width:800px;
+	width:250px;
 	font-style: bold;
     color:#1E824c;
 	font-size: 40px;
-	margin-left: 195px;
+	margin-left: 225px;
 	margin-bottom: 50px;
 }
 .titre_contact
@@ -1114,14 +1114,26 @@ article legend{
 	margin-left: 150px;
 
 }
-
+#cadre_contact
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	margin-left: 400px;
+	margin-top: 30px;
+	margin-right: 200px;
+	margin-bottom:200px;
+	border: 3px solid rgba(255,255,255,0.75);
+	background-color: rgba(255,255,255,0.75);
+	height: 800px;
+	width: 750px;
+}
 .contact_input
 {
 	height:50px;
 	width:400px;
 	margin-left:150px;
 	background-color: #ECECEC;
-	color:#1E824c;
 }
 
 .contact_message 
