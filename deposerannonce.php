@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <?php
@@ -40,7 +41,7 @@ try {
 		
 		<fieldset>
 			
-			<form method="post" action="">
+			<form method="post" action="annonceaccepte.php">
 				<legend><h2>Déposer une annonce</h2></legend>
 			
 				<article>
@@ -132,29 +133,29 @@ try {
 
 						<h3>Contraintes et services</h3>
 						<div class="contraintes">
-							<input type="radio" name="climatisation" id="climatisation"/> <label for="climatisation">Climatisation</label>
+							<input type="checkbox" name="climatisation" id="climatisation"/> <label for="climatisation">Climatisation</label>
 						</div>
 						<div class="contraintes">
-							<input type="radio" name="wifi" id="wifi"/> <label for="wifi">Wifi</label><br/>
+							<input type="checkbox" name="wifi" id="wifi"/> <label for="wifi">Wifi</label><br/>
 						</div>
 						<div class="contraintes">
-							<input type="radio" name="animauxautorises" id="animauxautorises"/> <label id="animauxautorises" for="animauxautorises">Animaux autorisés</label><br/>
+							<input type="checkbox" name="animauxautorises" id="animauxautorises"/> <label id="animauxautorises" for="animauxautorises">Animaux autorisés</label><br/>
 						</div>
 						<div class="contraintes">
-							<input type="radio" name="equipement" id="equipement"/> <label id="equipement" for="equipement">Equipements adaptés aux enfants</label><br/>
+							<input type="checkbox" name="equipement" id="equipement"/> <label id="equipement" for="equipement">Equipements adaptés aux enfants</label><br/>
 						</div>
 						<div class="contraintes">
-							<input type="radio" name="acceshandicape" id="acceshandicape"/> <label for="acceshandicape">Accès handicapé</label><br/>
+							<input type="checkbox" name="acceshandicape" id="acceshandicape"/> <label for="acceshandicape">Accès handicapé</label><br/>
 						</div>
 						
 						<div class="contraintes">
-							<input type="radio" name="fumeur" id="fumeur"/> <label for="fumeur">Fumeur</label><br/>
+							<input type="checkbox" name="fumeur" id="fumeur"/> <label for="fumeur">Fumeur</label><br/>
 						</div>
 						<div class="contraintes">
-							<input type="radio" name="equipementssportifs" id="equipementssportifs"/> <label for="equipementssportifs">Equipements sportifs</label><br/>
+							<input type="checkbox" name="equipementssportifs" id="equipementssportifs"/> <label for="equipementssportifs">Equipements sportifs</label><br/>
 						</div>
 						<div class="contraintes">
-							<input type="radio" name="commerces" id="commerces"/> <label for="commerces">Commerces à proximité</label><br/>
+							<input type="checkbox" name="commerces" id="commerces"/> <label for="commerces">Commerces à proximité</label><br/>
 						</div>
 			
 						<h3>Disponibilités</h3>
@@ -226,6 +227,14 @@ try {
 								// print_r($res);
 							}
 						?>
+						<?php
+
+						 $user['id_user'] = isset($_POST["id_user"]) ? $_POST["id_user"] : '';
+						 $req=$db->prepare('SELECT * FROM home, echange, user WHERE user_id_user=id_user AND home_id_home=id_home ');
+						 $req->execute($user);
+						 $homes = $req->fetchAll();
+						 
+						 ?>
 				</article>
 			</form>
 		</fieldset>
