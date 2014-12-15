@@ -1272,5 +1272,196 @@ font-style: bold;
 }
 
 
-/*Mot de passe oublié*/
+/* Modif */
+.coord {
+	list-style-type: none;
+	list-style: none;
+	color: #1E824c;
+	font-size: 16px;
+	line-height: 25px;
+}
+.titre_modif
+{
+	font-size: 30px;
+	color: #1E824c;
+	width: 220px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.lien_modif 
+{
+	color: gray;
+	line-height: 24px;
+	font-size: 14px;
+	list-style-type: none;
+	list-style: none;
+}	
+.lien_modif:hover {
+	color: #1E824c; 
+	font-size: 16px;
+}
+.cadre_modif
+{
+	padding-top: 20px;
+	margin-bottom: 50px;
+	margin-left: 350px;
+	margin-right: 50px;
+	margin-top: 23px;
+	height: 490px;
+	background-color: rgba(255,255,255,0.75);
+	width: 500px;
+}
+.titre_fiche2
+{
+	color: #1E824c;
+	width: 390px;
+	font-size: 35px;
+	margin-left: auto;
+	margin-right: auto;
+}	
+#form_modif
+ {
+ 	width: 700px;
+ 	height:900px;
+ 	padding:10px;
+ 	background-color:rgba(255,255,255,0.5);
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	border: 1px solid rgba(255,255,255,0.75);
+ 	vertical-align: middle;
+ 	margin-bottom: 100px;
+}
+
+
+
+/* Resultat Recherche*/
+.fond
+{
+	width:100%;
+}
+.sect_result
+{
+	margin-left:18%;
+	margin-right:20%;
+}
+.article_result
+{
+	font-size: 20px;
+	font-weight: bold;
+	padding:5%;
+}
+.cadre_aside_result
+{
+	float:right;
+	width:400px;
+	background-color:rgba(255,255,255,0.75);
+	padding:2%;
+	color:white;
+	font-size:150%;
+	text-align:center;
+	border:rgba(192,192,192,0.75) solid 1px; 
+	margin-top:100px;
+	margin-bottom: 300px;
+	margin-right: 50px
+}
+.aside_result{
+	width:350px;
+	background-color:#c0c0c0;
+	padding:2%;
+	opacity:0.75;
+	color:white;
+	font-size: 150%;
+	text-align:center;
+	border:rgba(192,192,192,0.75) solid 1px; 
+	border-radius:10%;
+	
+}
+.cadre_result{
+	border:1px solid rgba(255,255,255,0.75);
+	background-color: rgba(255,255,255,0.75);
+	color:#1E824c;
+	width:1200px;
+	height:1800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	margin-bottom: 400px;
+}
+.cadre_result h2{
+	padding:2%;
+	color: #1E824c;
+	font-size: 30px;
+}
+.cadre_result a 
+{
+	color:#1E824c;
+	font-size: 18px;
+	text-decoration:none;
+	font-weight: bold;
+}
+.cadre_result a:hover
+{
+	font-size: 20px;
+	text-decoration: underline;
+	color:rgb(76,76,76);
+	font-style: bold;
+}
+.envoyer
+{
+	text-align: center;
+}
+.logement
+{
+	border: solid 1px white;
+	background-color: white;
+	color:#c0c0c0;
+
+}
+.phraseaccroche img{
+	background-color: rgba(255,255,255,0.75);
+	color:#c0c0c0;
+}
+
+
+
+/*fichelogement*/
+.ficheloge{
+width:720px;
+margin-left:auto;
+margin-right:auto;
+text-align: center;
+border: solid 1px rgba(255,255,255,0.75);
+background-color: rgba(255,255,255,0.75);
+
+}
+
+.ficheloge li{
+list-style-type: none;
+color:gray;
+}
+
+.ficheloge h3{
+	color: #1E824c;
+	text-align: center;
+}
+.ficheloge h2{
+	color: #1E824c;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width:  700px;
+}
+
+.calendrier {
+	color: gray;
+}
+.ficheloge a{
+	color:#1E824c;
+	text-decoration: none;
+}
+.ficheloge a:hover{
+	color:gray;
+	text-decoration: underline;
+}
+
 
