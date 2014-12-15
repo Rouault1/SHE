@@ -1,5 +1,5 @@
 <?php
-$membre = 0;
+session_start();
 function error ($nom) {
   global $errors;
   echo (isset($errors[$nom]) ? $errors[$nom] : '');
@@ -66,25 +66,26 @@ if(!empty($_POST))
           $_SESSION['id'] = $res[0];
           $_SESSION['prenom'] = $res[1];
           $_SESSION['nom'] = $res[2]; 
-          $_SESSION['city'] = $res[3];
-          $_SESSION['pays'] = $res[4];
-          $_SESSION['n_port'] = $res[5];
-          $_SESSION['email'] = $res[6];
-          $_SESSION['code_p'] = $res[7];
-          $_SESSION['n_fixe'] = $res[8];
-          $_SESSION['date_naiss'] = $res[9];
-          $_SESSION['date_insc'] = $res[10];
-          $_SESSION['gender'] = $res[11];
-          $_SESSION['address'] = $res[13];
-          $_SESSION['region'] = $res[14];
-          $membre = 1;
+          $_SESSION['adresse'] = $res[3];
+          $_SESSION['city'] = $res[4];
+          $_SESSION['pays'] = $res[5];
+          $_SESSION['n_port'] = $res[6];
+          $_SESSION['email'] = $res[7];
+          $_SESSION['mdp'] = $res[8];
+          $_SESSION['code_p'] = $res[9];
+          $_SESSION['n_fixe'] = $res[10];
+          $_SESSION['genre'] = $res[12];
+          $_SESSION['date_naiss'] = $res[13];
+          $_SESSION['date_inscr'] = $res[14];
+          $_SESSION['region'] = $res[15];
+
           }   
           elseif(isset($res) && (empty($res))){
               $errors['login'] = message('Mauvais identifiant ou mot de passe.','error');
           }  
       }    
 } 
-if($membre != 1)
+if (!$_SESSION)
   {
   include ('inc/header_inv.php');
   echo '<div id="barre_connect">';
@@ -103,6 +104,7 @@ echo '</div>';
 else {
   include ('inc/header.php');
   include('inc/esp_membre.php');
+  echo '<div class="msg_bvn">Bienvenue '.$_SESSION['prenom'].' '.$_SESSION['nom'].'</div> ';
   echo '<div class="barre_recherche">';
   echo '<form method="post" action="resultats_recherchem.php">
   <legend>Recherchez une annonce</legend>
@@ -112,14 +114,12 @@ else {
   echo '<div class="lien_recherche">
       <a href="recherchem.php">Recherche avancée</a>';
   echo '</div>';   
-
 } 
 include ('inc/slider.php');     
 ?>
 <?php error('email');
       error('password'); ?>
 <?php echo isset($errors['login']) ? $errors['login'] : ''; ?>
-<?php echo isset($_SESSION) ? 'Bonjour ' . $_SESSION['nom'] . '  ' . $_SESSION['prenom'] . ' !' : ''; ?>
 
 
 <div id="mosaic">

@@ -76,7 +76,7 @@ ul#menu1 a:hover {
 
 	position: relative;
 	float: left;
-	height: 550px;
+	height: 500px;
 	width: 300px;
 	border-radius: 2px;
 	border-spacing: 4px;
@@ -157,7 +157,7 @@ ul#menu1 a:hover {
 /*Page d'Accueil*/
 .barre_recherche
 {
-	width:800px;
+	width:1100px;
 	height:550px;
 	margin-top: 50px;
     margin-left: auto;
@@ -217,6 +217,15 @@ ul#menu1 a:hover {
 	text-decoration: underline;
 	font-size: 35px;
 }
+.msg_bvn
+{
+	font-size: 26px;
+	width: 400px;
+	height: 50px;
+	color: #1E824C;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 
 /* Page d'accueil non membre*/
@@ -233,7 +242,7 @@ ul#menu1 a:hover {
 }
 #barre_connect
 {
-	width:1400px;
+	width:1000px;
 	height:550px;
 	margin-top: 150px;
     margin-left: auto;
@@ -382,7 +391,7 @@ ul#menu1 a:hover {
 #inscrip
  {
  	width: 700px;
- 	height:1300px;
+ 	height:1100px;
  	padding:10px;
  	background-color:rgba(255,255,255,0.5);
  	margin-left: auto;
@@ -486,14 +495,21 @@ font-style: bold;
 	text-decoration: underline;
 	font-size: 35px;
 }
-
+.titre_modif {
+	width: 390px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #1E824c;
+	font-weight: bold;
+	font-size: 35px;
+}
 /* Contacts*/
 article legend{
-	width:800px;
+	width:250px;
 	font-style: bold;
     color:#1E824c;
 	font-size: 40px;
-	margin-left: 195px;
+	margin-left: 225px;
 	margin-bottom: 50px;
 }
 .titre_contact
@@ -509,7 +525,7 @@ article legend{
 {
 	padding-top: 50px;
 	padding-bottom: 50px;
-	padding-left: 150px;
+	padding-left: 50px;
 	margin-left: 400px;
 	margin-top: 30px;
 	margin-right: 200px;
@@ -517,7 +533,7 @@ article legend{
 	border: 3px solid rgba(255,255,255,0.75);
 	background-color: rgba(255,255,255,0.75);
 	height: 800px;
-	width:900px;
+	width: 750px;
 }
 .contact_input
 {
@@ -1162,4 +1178,63 @@ ul.notes-echelle li.note-focus {
 	color:#1E824c;
 	font-size: 25px;
 	font-weight: bold;
+}
+/* Modif */
+.coord {
+	list-style-type: none;
+	list-style: none;
+	color: #1E824c;
+	font-size: 16px;
+	line-height: 25px;
+}
+.titre_modif
+{
+	font-size: 30px;
+	color: #1E824c;
+	width: 220px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.lien_modif 
+{
+	color: gray;
+	line-height: 24px;
+	font-size: 14px;
+	list-style-type: none;
+	list-style: none;
+}	
+.lien_modif:hover {
+	color: #1E824c; 
+	font-size: 16px;
+}
+.cadre_modif
+{
+	padding-top: 20px;
+	margin-bottom: 50px;
+	margin-left: 350px;
+	margin-right: 50px;
+	margin-top: 23px;
+	height: 490px;
+	background-color: rgba(255,255,255,0.75);
+	width: 500px;
+}
+.titre_fiche2
+{
+	color: #1E824c;
+	width: 390px;
+	font-size: 35px;
+	margin-left: auto;
+	margin-right: auto;
+}	
+#form_modif
+ {
+ 	width: 700px;
+ 	height:900px;
+ 	padding:10px;
+ 	background-color:rgba(255,255,255,0.5);
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	border: 1px solid rgba(255,255,255,0.75);
+ 	vertical-align: middle;
+ 	margin-bottom: 100px;
 }
