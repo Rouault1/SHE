@@ -16,22 +16,22 @@ try {
 	</head>
 
 	<body>
-		<?php include('inc/header.php'); ?>
+		<?php include('inc/header_eng.php'); ?>
 	
-		<?php include('inc/esp_membre.php');?>
+		<?php include('inc/esp_membre_eng.php');?>
 	
 	
 	<section><div class="corps_deposeruneannonce">
 	
 		
 			
-			<form method="post" action="annonceaccepte.php">
-				<legend><h2>Déposer une annonce</h2></legend>
+			<form method="post" action="annonceaccepte_eng.php">
+				<legend><h2>File an announcement</h2></legend>
 			
 				<article>
-						<h3>Localisation<h3>
+						<h3>Location<h3>
 						<div class="localisation" id="localisation_pays">
-							<label class="pays" for="localisation">Pays</label><br/>
+							<label class="pays" for="localisation">Country</label><br/>
 							<select name="pays" id="pays" class="pays">
 								<option value="france">France</option>
 							</select>
@@ -70,108 +70,108 @@ try {
 						</div>
 
 						<div class="localisation">
-							<label class="ville" for="ville">Ville</label><br />
+							<label class="ville" for="ville">City</label><br />
 							<input name="ville" class="ville" id="ville">
 						</div>
 
 				
 						<div class="localisation">
-							<label class="ville" for="adresse">Adresse</label><br />
+							<label class="ville" for="adresse">Address</label><br />
 							<input name="adresse" class="ville" id="adresse">
 						</div>:
 
 			
 			
 			
-						<h3>Caractéristiques du logement</h3><br/>	
+						<h3>Housing characteristics</h3><br/>	
 						<p>
 						
 						<div class="caracteristiques" id="caracteristiques_sejour"><br/>
-							<label class="sejour"for="sejour">Type de séjour</label><br/>
+							<label class="sejour"for="sejour">Type of stay</label><br/>
 							<select name="sejour" id="sejour" class="sejour">
-								<option value="ville">Ville</option>
-								<option value="campagne">Campagne</option>
-								<option value="A la mer">A la mer</option>
+								<option value="ville">City</option>
+								<option value="campagne">Countryside</option>
+								<option value="A la mer">Seaside</option>
 							</select>
 						</div>
 						
 						<div class="caracteristiques" id="caracteristiques_pieces">
-							<label class="pieces"for="pieces">Nombre de pièces</label><br/>
+							<label class="pieces"for="pieces">Number of room</label><br/>
 							<input name="pieces"id="pieces" class="pieces" type="number">
 						</div>
 				
 						<div class="caracteristiques" id="caracteristiques_personnes">
-							<label class="personnes"for="personnes" id="personnes">Nombre de personnes</label><br/>
+							<label class="personnes"for="personnes" id="personnes">Number of people</label><br/>
 							<input name="personnes"id="personnes"class="personnes" type="number">
 						</div><br/>
 				
 						</p>
 						
 						<div class="amenagement">
-							<h3 class="amenagement">Aménagements extérieurs</h3></br>
+							<h3 class="amenagement">Outer arrangements</h3></br>
 			
 								<input type="radio"class="parking" name="parking" id="parking"/> <label class="parking" id="parking" for="parking">Parking</label><br/>
 							
-								<input type="radio"class="piscine" name="piscine" id="piscine"/> <label class="piscine" id="piscine" for="piscine">Piscine</label><br/>
+								<input type="radio"class="piscine" name="piscine" id="piscine"/> <label class="piscine" id="piscine" for="piscine">Pool</label><br/>
 						</div>
 
-						<h3>Contraintes et services</h3>
+						<h3>Constraints and services</h3>
 						<div class="contraintes">
-							<input type="checkbox" name="climatisation" id="climatisation"/> <label for="climatisation">Climatisation</label>
+							<input type="checkbox" name="climatisation" id="climatisation"/> <label for="climatisation">Air conditioning</label>
 						</div>
 						<div class="contraintes">
 							<input type="checkbox" name="wifi" id="wifi"/> <label for="wifi">Wifi</label><br/>
 						</div>
 						<div class="contraintes">
-							<input type="checkbox" name="animauxautorises" id="animauxautorises"/> <label id="animauxautorises" for="animauxautorises">Animaux autorisés</label><br/>
+							<input type="checkbox" name="animauxautorises" id="animauxautorises"/> <label id="animauxautorises" for="animauxautorises">Pets allowed</label><br/>
 						</div>
 						<div class="contraintes">
-							<input type="checkbox" name="equipement" id="equipement"/> <label id="equipement" for="equipement">Equipements adaptés aux enfants</label><br/>
+							<input type="checkbox" name="equipement" id="equipement"/> <label id="equipement" for="equipement">Child's adapted equipments</label><br/>
 						</div>
 						<div class="contraintes">
-							<input type="checkbox" name="acceshandicape" id="acceshandicape"/> <label for="acceshandicape">Accès handicapé</label><br/>
+							<input type="checkbox" name="acceshandicape" id="acceshandicape"/> <label for="acceshandicape">Disabled access</label><br/>
 						</div>
 						
 						<div class="contraintes">
-							<input type="checkbox" name="fumeur" id="fumeur"/> <label for="fumeur">Fumeur</label><br/>
+							<input type="checkbox" name="fumeur" id="fumeur"/> <label for="fumeur">Smoking</label><br/>
 						</div>
 						<div class="contraintes">
-							<input type="checkbox" name="equipementssportifs" id="equipementssportifs"/> <label for="equipementssportifs">Equipements sportifs</label><br/>
+							<input type="checkbox" name="equipementssportifs" id="equipementssportifs"/> <label for="equipementssportifs">Sports equipments</label><br/>
 						</div>
 						<div class="contraintes">
-							<input type="checkbox" name="commerces" id="commerces"/> <label for="commerces">Commerces à proximité</label><br/>
+							<input type="checkbox" name="commerces" id="commerces"/> <label for="commerces">Shop nearby</label><br/>
 						</div>
 			
-						<h3>Disponibilités</h3>
+						<h3>DAvailabilities</h3>
 						<div class="disponibilites">
-							<label class="debut" for="debut"id="debut">Date de début</label><br />
+							<label class="debut" for="debut"id="debut">From:</label><br />
 							<input class="debut" type="date" name="debut" id="debut">
 						</div>
 						<div class="disponibilites">
-							<label for="fin"id="fin">Date de fin</label><br />
+							<label for="fin"id="fin">To: </label><br />
 							<input class="fin"type="date" name="fin" id="fin">
 						</div>
 						
-						<h3>Autres remarques</h3>
+						<h3>Comments</h3>
 						<div class="remarques">
 							<textarea name="remarque" id="remarque" rows="10" cols="50"></textarea>  
 						</div>  
 						
 						</br>
 						
-						<h3>Phrase d'accroche</h3>
+						<h3>Catch phrase</h3>
 						<div class="accroche">
 							<textarea name="accroche" id="accroche"></textarea>
 						</div>
 						
-						<h3>Acte de propriété</h3>
+						<h3>Deed of property</h3>
 							<input type="image" id="propriete" value="Envoyer acte de propriété" />
 						
-						<h3>Image de la propriété</h3>
+						<h3>Pictures of your property</h3>
 							<input  type="image" id="photo" value="Envoyer image" />
-							<p>Pour que votre demande soit valide veuillez poster trois photographies de votre logement</p></article></br>
+							<p>For your application to be valid, please post three photos of your home</p></article></br>
 							<div class="envoyer">
-							<input class="soumettre" type="submit" value="Envoyer" />
+							<input class="soumettre" type="submit" value="Submit" />
 							</div>
 						</div>
 					
@@ -217,7 +217,7 @@ try {
 				
 		
 		<?php include('inc/slider.php');?>
-	   <?php include('inc/footer.php');?>
+	   <?php include('inc/footer_eng.php');?>
 
 
 			</body>

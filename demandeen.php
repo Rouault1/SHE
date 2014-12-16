@@ -29,9 +29,9 @@ try{
 	</head>
 
 	<body>
-		<?php include('inc/header.php'); ?>
+		<?php include('inc/header_eng.php'); ?>
 	
-		<?php include('inc/esp_membre.php');?>
+		<?php include('inc/esp_membre_eng.php');?>
 	
 	
 	
@@ -39,26 +39,26 @@ try{
 
 		
 		
-			<form method="post" action="demandeaccepte.php?id=<?= $_GET['id']; ?>">
-				<legend><h2>Demande d'échange</h2></legend>
+			<form method="post" action="demandeaccepteen.php?id=<?= $_GET['id']; ?>">
+				<legend><h2>Request of Exchange</h2></legend>
 			<article>
 			
-						<h3>Disponibilités</h3>
+						<h3>Availabilities</h3>
 						<div class="disponibilites">
-							<label class="debut" for="debut"id="debut">Date de début</label><br />
+							<label class="debut" for="debut"id="debut">From</label><br />
 							<input class="debut" type="date" name="debut" id="debut">
 						</div>
 						<div class="disponibilites">
-							<label class="fin"for="fin"id="fin">Date de fin</label><br />
+							<label class="fin"for="fin"id="fin">To</label><br />
 							<input class="fin"type="date" name="fin" id="fin">
 						</div>
 					
 						 <div class="envoyer" style="margin-top:5%;">
 							
-							<input class="soumettre" type="submit" value="Enregistrer demande" />
+							<input class="soumettre" type="submit" value="Register" />
 						 </div>
 
-							<a href="fiche_membre.php?id=<?= $home['id_user']; ?>">Fiche membre <br><?= $home['first_name'] . ' ' . $home['last_name']; ?></a>
+							<a href="fiche_membre.php?id=<?= $home['id_user']; ?>">Members' informations <br><?= $home['first_name'] . ' ' . $home['last_name']; ?></a>
 				</article>
 				</form>
 	
@@ -67,6 +67,6 @@ try{
 
 				
 		<?php include('inc/slider.php');?>
-	    <?php include('inc/footer.php');?>
+	    <?php include('inc/footer_eng.php');?>
 
 			</body>

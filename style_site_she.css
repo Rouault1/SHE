@@ -1518,3 +1518,175 @@ margin-top: 400px;
 	font-size: 30px ;
 	color:gray ;
 }
+/* Modif */
+.coord {
+	list-style-type: none;
+	list-style: none;
+	color: #1E824c;
+	font-size: 16px;
+	line-height: 25px;
+}
+.titre_modif
+{
+	font-size: 30px;
+	color: #1E824c;
+	width: 220px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.lien_modif 
+{
+	color: gray;
+	line-height: 24px;
+	font-size: 14px;
+	list-style-type: none;
+	list-style: none;
+}	
+.lien_modif:hover {
+	color: #1E824c; 
+	font-size: 16px;
+}
+.cadre_modif
+{
+	padding-top: 20px;
+	margin-bottom: 50px;
+	margin-left: 350px;
+	margin-right: 50px;
+	margin-top: 23px;
+	height: 490px;
+	background-color: rgba(255,255,255,0.75);
+	width: 500px;
+}
+.titre_fiche2
+{
+	color: #1E824c;
+	width: 390px;
+	font-size: 35px;
+	margin-left: auto;
+	margin-right: auto;
+}	
+#form_modif
+ {
+ 	width: 700px;
+ 	height:900px;
+ 	padding:10px;
+ 	background-color:rgba(255,255,255,0.5);
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	border: 1px solid rgba(255,255,255,0.75);
+ 	vertical-align: middle;
+ 	margin-bottom: 100px;
+}
+
+.flags li {
+	list-style:none;
+	list-style-type:none;
+	display: inline-block;
+	float:right;
+}
+.flagb {
+	margin-top: 9px;
+}
+/* Contacts*/
+article legend{
+	width:280px;
+	font-style: bold;
+    color:#1E824c;
+	font-size: 40px;
+	margin-left: auto;
+	margin-bottom: 50px;
+	margin-right: auto;
+	margin-top: 50px;
+}
+#cadre_contact {
+
+	width: 900px;
+	height: 750px;
+	background-color: rgba(255,255,255,0.75);
+	margin-left: 400px;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	padding-top: 20px;
+}
+.titre_contact
+{
+	color:#1E824c;
+	font-size: 40px;
+	font-style: bold;
+	padding-left:150px;
+
+}
+
+.contact_input
+{
+	height:50px;
+	width:400px;
+	margin-left:100px;
+	background-color: #ECECEC;
+	color:#1E824c;
+}
+
+.contact_message 
+{
+	margin-top: 20px;
+	margin-left: 100px;
+	height:300px;
+	width:700px;
+	background-color: #ECECEC;
+}
+.contact_sujet
+{	
+    background-color: #ECECEC;
+	width:400px;
+	height:50px;
+	margin-left: 100px;
+}	
+#envoyer
+ {
+ 	margin-top:10px;
+ 	margin-left: 320px;
+ 	width:250px;
+ 	height:50px;
+	background-color: #1E824c;
+	color:white;
+	font-size: 25px;
+	font-style: bold;
+}
+/* FAQ */
+.faq {
+	width: 900px;
+	height: 900px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 10px;
+	margin-left: 350px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	background-color: rgba(255,255,255,0.75);
+}
+.faq p {
+	font-size: 16px;
+	color: rgb(72,72,72);
+	line-height: 18px;
+}
+.faq h1 {
+	font-size: 52px;
+	color: #1E824c;
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.faq h2 {
+	color:#1E824c;
+	font-weight: bold;
+}
+
+/* Message accueil */
+.msg_bvn {
+	font-size: 40px;
+	margin-top: 20px;
+	color: #1E824c;
+	margin-left: auto;
+	margin-right: auto;
+	width: 290px;
+}

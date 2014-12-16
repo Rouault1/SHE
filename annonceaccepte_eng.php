@@ -45,47 +45,16 @@ if(isset($_POST)) {
 
 
 ?>
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8"/>
-		<link rel="stylesheet" href="styledeposerannonce.css" />
-		<title>Deposer une annonce</title>
-	</head>
+<?php include('inc/header.php'); ?>
+<?php include('inc/slider.php'); ?>
+<?php include('inc/esp_membre.php');?>
 
-	<body>
-		<?php include('inc/header.php'); ?>
+<h1 class="titre_verif">Thanks for submitting your house.</h1>
+	<div class="verif">
+		<h3 class="verif2">Your announce has been successfully submitted.</h3>
+		<a href="index.php" class="lien_verif">Back to home</a>
+	</div>	
 	
-		<?php include('menu.php');?>
-	
-	<img class="fond1"src="images/fond1.jpg" />
-	
-	<aside>
-		<img class="fond"src="images/fond.jpg" />
-		<p>Villa</p>
-	</aside>
-	
-	<aside>
-		<img class="fond"src="images/famille.jpg" />
-		<p>Week-end en famille</p>
-	</aside>
-	
-	<aside>
-		<img class="fond"src="images/paris.jpg" />
-		<p>Appartement parisien</p>
-	</aside>
-	
-	<section>
-		
-		<fieldset>
-		<p>
-		Votre logement a bien été enregistré
-		</p>
-		</fieldset>
-	</section>
-
-	<img class="fond2"src="images/fond.jpg" />
-	
-	<?php include('footer.php');?>
+<?php include('footer.php');?>
 
 </body>

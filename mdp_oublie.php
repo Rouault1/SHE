@@ -39,7 +39,7 @@ verif("#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", 'Email', 'mail');
 
 if(empty($errors)){
    try {
-            $db = new PDO("mysql:host=localhost;dbname=mydb", "root", "root");
+            $db = new PDO("mysql:host=localhost;dbname=mydb", "root", "");
             // Permet d'afficher les erreurs envoyés par SQL
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
           } 
@@ -58,7 +58,7 @@ if(empty($errors)){
           if(isset($res) && (!empty($res))){
               $errors['global']=message('Vous allez recevoir un email pour réinitialiser votre mot de passe.');
              
-              $to=$_POST["mail"];
+              $to=$_SESSION["email"];
              
               $sujet='Mot de passe oublié';
               
@@ -71,11 +71,7 @@ if(empty($errors)){
               $msg.="\r\n";
               $msg.="L'équipe du site SHE";
               
-              $header='From: alex.schieving@gmail.com'."\r\n\r\n";
-              $header.="X-Mailer: PHP/".phpversion();
-              $header.="MIME-Version: 1.0\r\n";
-              $header.="Content-type: text/html; charset=UTF-8\r\n";
-
+              $header='From: contactshe@she.fr'."\r\n\r\n";
               try{
               mail($to,$sujet,$msg,$header);
 
@@ -94,13 +90,15 @@ if(empty($errors)){
 <?php include('inc/header.php');
       include('inc/slider.php');
 ?>
-<form method="post" action="">
+<h2 class='titre_mdp'>Mot de passe oublié:</h2>
+<form class='form_mdp' method="post" action="">
    <label>Votre Adresse Email:</label>
-    <input type="email" name="mail" id="mail" value="<?= (isset($_POST['mail']) ? $_POST['mail'] : ''); ?>">
+    <input class='email' type="email" name="mail" id="mail" value="<?= (isset($_POST['mail']) ? $_POST['mail'] : ''); ?>">
     <?php error('mail'); ?> 
     <?php echo isset($errors['login']) ? $errors['login'] : '' ;
           echo isset($errors['global']) ? $errors['global'] : '' ;
     ?>
-   <input type="submit" value="envoyer">
+   <input class='soumettreform' type="submit" value="envoyer">
 </form>
+
 <?php include('inc/footer.php');?>

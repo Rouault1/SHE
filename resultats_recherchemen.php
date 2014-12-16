@@ -64,7 +64,7 @@ if (!empty($_POST)) {
 	$req = $db->prepare('INSERT INTO recherche (user_recherche, ' . $sql1 . ') VALUES (:user_id, ' . preg_replace('/([a-z_]+,? ?)/', ':$1', $sql1) . ')');
 	$req->execute($params);
 	$res = $db->lastInsertId();
-	if ($res) { echo '<script>alert(\'Recherche enregistrée !\')</script>'; }
+	if ($res) { echo '<script>alert(\'Registered search !\')</script>'; }
 }
 ?>
 <!DOCTYPE html>
@@ -76,27 +76,27 @@ if (!empty($_POST)) {
 	</head>
 
 	<body>
-		<?php include('inc/header.php'); ?>
+		<?php include('inc/header_eng.php'); ?>
 	
-		<?php include('inc/esp_membre.php');?>
+		<?php include('inc/esp_membre_eng.php');?>
 
 	
 	<section style="position:relative;width:62%;"><div class="corps_deposeruneannonce" style="margin-left:50%;">
 
-		<h3>Résultats de votre recherche;</h3>	
+		<h3>Results of your search;</h3>	
 
 <?php foreach($homes as $home): ?>
 	<div style="float:left;width:25%;box-sizing:border-box;margin:5px;background-color:#fff;">
-		<b>Pays : </b><?= $home['home_country'];?><br>
+		<b>Country : </b><?= $home['home_country'];?><br>
 		<b>Region : </b><?= $home['home_region'];?><br>
-		<b>Ville : </b><?= $home['home_ville'];?><br>
-		<b>Adresse : </b><?= $home['adresse'];?><br>
-		<a href="fiche_logementm.php?id=<?= $home['id_home']; ?>">Consulter la maison</a>
+		<b>City : </b><?= $home['home_ville'];?><br>
+		<b>Address : </b><?= $home['adresse'];?><br>
+		<a href="fiche_logementmen.php?id=<?= $home['id_home']; ?>">See the corresponding home</a>
 	</div>
 <?php endforeach; ?>
 			
 	</section>
 	<?php include('inc/slider.php');?>
-	<?php include('inc/footer.php');?>
+	<?php include('inc/footer_eng.php');?>
 
 </body>

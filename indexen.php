@@ -19,10 +19,10 @@ function verif ($motif, $nom, $cle) {
       if (preg_match($motif, $valeur)) {
         $form[$cle] = $valeur;
       } else {
-        $errors[$cle] = message('Le ' . $nom . ' ' . $valeur . ' n\'est pas valide.', 'error');
+        $errors[$cle] = message('The ' . $nom . ' ' . $valeur . ' is not valid.', 'error');
       }
     } else {
-      $errors[$cle] = message('Le champ ' . $nom . ' doit être rempli.', 'error');
+      $errors[$cle] = message('The ' . $nom . ' field must be completed.', 'error');
     }
   }
 
@@ -34,7 +34,7 @@ if(!empty($_POST))
 {
   // Vérification des données entrées par l'utilisateur
   verif("#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", 'Email', 'email');
-  verif("#^.+$#", 'Mot de passe', 'password');
+  verif("#^.+$#", 'Password', 'password');
     if(empty($errors))
       {
         // Cryptage du mot de passe
@@ -60,7 +60,8 @@ if(!empty($_POST))
           //print_r($res);
           //echo '</pre>';
           if (isset($res) && (!empty($res))) {
-          $errors['global'] = message('Vous êtes connecté.');
+          $errors['global'] = message('You are connected.');
+         
           $_SESSION['id'] = $res[0];
           $_SESSION['prenom'] = $res[1];
           $_SESSION['nom'] = $res[2]; 
@@ -79,14 +80,14 @@ if(!empty($_POST))
 
           }   
           elseif(isset($res) && (empty($res))){
-              $errors['login'] = message('Mauvais identifiant ou mot de passe.','error');
+              $errors['login'] = message('Wrong login or password.','error');
           }  
       }    
 } 
 if (!$_SESSION)
   {
-  include ('inc/header_inv.php');
-  ?><ul class="flags"><li style=" list-style:none;
+  include ('inc/header_inv_eng.php');
+  ?><ul class='flags'><li style=" list-style:none;
   list-style-type:none;
   display: inline-block;
   float:right;"><a href="index.php"><img src="img/drapeaufrancais.png"/></a></li><li style=" list-style:none;
@@ -94,36 +95,36 @@ if (!$_SESSION)
   display: inline-block;
   float:right; margin-top:9px;"><a href="indexen.php"><img  class="flagb" src="img/flag_en.png"/></a></li></ul>
   <?php echo '<div id="barre_connect">';
-  echo '<form method="post" action="index.php" >
-  <legend>Connectez-vous</legend> 
-  <input type="text" name="email" id="email" class="connect1" placeholder="Adresse mail" required/>
-  <input type="password" name="password" class="connect2" id="password" placeholder="Mot de Passe" required/>
-  <input type="submit" value="Connexion" id="connection"/>
+  echo '<form method="post" action="indexen.php" >
+  <legend>Connection</legend> 
+  <input type="text" name="email" id="email" class="connect1" placeholder="Email" required/>
+  <input type="password" name="password" class="connect2" id="password" placeholder="Password" required/>
+  <input type="submit" value="Log in" id="connection"/>
 </form>
 </div>
 <div id="lien_inscr">
-  <a href="oublie_mdp.php">Mot de passe oublié ?</a>
-  <a href="register.php">S\'inscrire</a>';
+  <a href="mdp_oublie.php">Forgot you password ?</a>
+  <a href="register_eng.php">Suscribe</a>';
 echo '</div>';
 } 
 else {
-  include ('inc/header.php');
-  include('inc/esp_membre.php');
+  include ('inc/header_eng.php');
+  include('inc/esp_membre_eng.php');
   ?>
   <?php echo '<div class="msg_bvn" style="font-size: 40px;
   margin-top: 20px;
   color: #1E824c;
   margin-left: auto;
   margin-right: auto;
-  width: 290px;">Bienvenue, '.$_SESSION['prenom'].'</div> ';
+  width: 290px;">Welcome '.$_SESSION['prenom'].' !</div> ';
   echo '<div class="barre_recherche">';
   echo '<form method="post" action="resultats_recherchem.php">
-  <legend>Recherchez une annonce</legend>
-  <input type="text" name="recherche" class="recherche" placeholder="Mot-clé" required />
-  <input type="submit" value="Rechercher" class="rechercher"/>;';
+  <legend>Search for an housing</legend>
+  <input type="text" name="recherche" class="recherche" placeholder="Key words" required />
+  <input type="submit" value="Search" class="rechercher"/>;';
   echo '</div>';
   echo '<div class="lien_recherche">
-      <a href="recherchem.php">Recherche avancée</a>';
+      <a href="recherchem.php">Advanced search</a>';
   echo '</div>';   
 } 
 include ('inc/slider.php');     
@@ -134,7 +135,7 @@ include ('inc/slider.php');
 
 
 <div id="mosaic">
-  <h2 id="titre_mos">Les Mieux Notés</h2>
+  <h2 id="titre_mos">Best of housing</h2>
 <table id="mos" border="0" callpadding="0" cellspacing="0">
   <tr>
     <td><a href="#"><img id="mos_img" src="img/Maison1.jpg" width="500px" height="300px"></a></td>
@@ -157,4 +158,4 @@ include ('inc/slider.php');
 </table>
 </div>
 </div>
-<?php include('inc/footer.php'); ?>
+<?php include('inc/footer_eng.php'); ?>

@@ -7,9 +7,9 @@
 
        				<legend>Contactez nous</legend>
        				<label for="input-name" id="titre_contact">Nom</label>
-       				<input type="text" name="input-name" id="input_name" required/>
+       				<input type="text" name="input-name" id="input_name" required/></br>
               <label for="input-email" id="titre_contact">Email</label>
-              <input type="email" name="input-email" id="input_email" required />
+              <input type="email" name="input-email" id="input_email" required /></br>
 							<label  for="sujet" id="titre_contact">Sujet</label>
        				<select name="sujet" id="sujet">
           			<option value="problèmes de comptes">Problèmes de compte</option>
