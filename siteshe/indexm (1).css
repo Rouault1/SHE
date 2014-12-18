@@ -1,0 +1,56 @@
+.barre_recherche
+{
+	width:800px;
+	height:550px;
+	margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap; 
+}
+.barre_recherche legend {
+	font-size: 60px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	color: green;
+	margin-top: 200px;
+}
+.recherche
+{
+	width:500px;
+	height:50px;
+	font-size: 40px;
+	margin-left: 140;
+	margin-top: 30px;
+	
+}
+.rechercher
+{   
+    width:250px;
+    height:50px;
+	background-color:#1E824C;
+	color:white;
+	font-size: 40px;
+	margin-left: 5px;
+}
+.lien_recherche
+{   
+
+	font-size: 30px;
+	width:800px;
+	margin-top: -400px;
+	margin-left: 465px;
+}
+.lien_recherche a
+{
+   color:#1E824c;
+   text-decoration: none;
+   font-style: bold;
+}
+.lien_recherche a:hover
+{
+	color:rgb(76,76,76);
+	font-style:bold;
+	text-decoration: underline;
+	font-size: 35px;
+}
